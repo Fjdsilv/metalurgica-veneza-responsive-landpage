@@ -1,0 +1,188 @@
+@media screen and (max-width:1140px){
+	.gallery{
+		padding:90px 4%;
+	}
+
+	.img_about{
+		height:800px;
+		width:40%;
+	}
+
+	section.contact{
+		padding:120px 0 100px;
+	}
+
+	.carousel .carousel-inner {
+        height: 450px;
+    }
+
+    .carousel-item, img{
+        height: 100% !important;
+        width:  100% !important;
+	}
+
+}
+
+
+@media screen and (max-width:992px){
+	body{
+		font-size:17px;
+	}
+
+	section.serv{
+		padding:80px 0;
+	}
+
+	h2{
+		margin-bottom:60px;
+	}
+
+
+	p{
+		margin-bottom:40px;	
+	}
+
+	.nav-link{
+		font-size:15px;
+	}
+
+	.carousel .carousel-inner {
+        height: 380px;
+    }
+
+    .carousel-item, img{
+        height: 100% !important;
+        width:  100% !important;
+	}
+
+	.gallery{
+		padding:70px 4%;
+	}
+
+	.map{
+		height:50vh;
+	}
+
+	.map iframe{
+		height:50vh;
+	}
+
+	section.about{
+		padding:80px 0;
+	}
+	
+	section.contact{
+		padding:80px 0 50px;
+	}
+
+	.img_about{
+		height:800px;
+		width:45%;
+	}
+
+}
+
+@media screen and (max-width:768px){
+	body{
+		font-size:16px;
+	}
+
+	section.serv{
+		padding:60px 0;
+	}
+
+	p{
+		margin-bottom:25px;	
+	}
+
+	.carousel .carousel-inner {
+        height: 320px;
+    }
+
+    .carousel-item, img{
+        height: 100% !important;
+        width:  100% !important;
+	}
+
+
+	.gallery{
+		padding:90px 4%;
+	}
+
+	section.about{
+		padding:60px 0;
+	}
+
+	.img_about{
+		display:none;
+	}
+
+	.map{
+		height:45vh;
+	}
+
+	.map iframe{
+		height:45vh;
+	}
+
+	section.contact{
+		padding:60px 0 20px;
+	}
+
+	section.contact .mb_contact{
+		margin-bottom:60px;
+		padding:0 20%;
+	}
+
+}
+
+@media screen and (max-width:576px){
+	body{
+		font-size:15px;
+	}
+
+	section.serv{
+		padding:50px 0;
+	}
+
+	p{
+		margin-bottom:10px;	
+	}
+
+	.container{
+		padding:0 4% !important;
+	}
+
+	.carousel .carousel-inner {
+        height: 300px;
+    }
+
+    .carousel-item, img{
+        height: 100% !important;
+        width:  100% !important;
+	}
+
+
+	.gallery{
+		display:none;
+	}
+
+	section.about{
+		padding:50px 0;
+	}
+	
+	section.contact{
+		padding:50px 0;
+	}
+
+	section.contact .mb_contact{
+		padding:0 20%;
+	}
+
+	footer p{
+		font-size:.8em;
+	}
+
+}
+
+

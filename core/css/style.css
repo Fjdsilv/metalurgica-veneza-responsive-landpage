@@ -1,0 +1,322 @@
+/* SETUP */
+
+html,
+body{
+	text-rendering:optimizeLegibility;
+	font-size:18px;
+	font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	background-color:#fff;
+	color:#000;
+	overflow-x:hidden !important;
+	scroll-behavior:smooth;
+}
+
+@font-face{
+	font-family:'Open Sans Regular';
+	src: url(../font/OpenSans-Regular.ttf);
+}
+
+@font-face{
+	font-family:'Open Sans Bold';
+	src: url(../font/OpenSans-Bold.ttf);
+	font-weight:700;
+}
+
+section{
+	overflow-x:hidden !important;
+	padding:120px 0;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+	text-decoration:none;
+	color:#fff;
+}
+
+ol,ul{
+	list-style:none;
+}
+
+h1{
+	display:none;
+}
+
+/*REUSEABLE*/
+
+h2{
+	font-family:'Open Sans Bold';
+	font-size:2.2em;
+	margin-bottom:80px;
+	color:#0c0d10;
+}
+
+h2::after{
+	content:'';
+	display:block;
+	width:90px;
+	height:3px;
+	background-color:#fff;
+	margin:0 auto;
+	margin-top:25px;
+	
+}
+
+h3{
+	font-size:1.6em;
+	color:#0c0d10;	
+}
+
+p{
+	color:#0c0d10;
+	margin-bottom:60px;	
+	text-align:justify;
+
+}
+
+/*HEADER*/
+
+.nav-brand img{
+	width:120px !important;
+	height:auto !important;
+}
+
+.navbar{
+	background-color:#fff;
+	padding:10px 0 15px;
+}
+
+.navbar-nav .nav-item a.fixed:link,
+.navbar-nav .nav-item a.fixed:visited,
+.navbar-nav .nav-item a.fixed:hover,
+.navbar-nav .nav-item a.fixed:active{
+	color:#1e90ff;
+}
+
+.navbar .nav-item .nav-link{
+	position:relative;
+	display:block;
+	font-family:'Open Sans Regular', sans-serif, Arial;
+	color:#0c0d10;
+}
+
+.navbar .nav-item .nav-link:link,
+.navbar .nav-item .nav-link:visited,
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:active{
+	color:#0c0d10;
+}
+
+.navbar .nav-item .nav-link::after{
+	position:relative;
+	left:0;
+	top:0;
+	content:'';
+	display:block;
+	width:0;
+	height:2px;
+	background-color:#0c0d10;
+	transition:all ease-in-out .3s;
+}
+
+.navbar .nav-item:hover .nav-link::after{
+	width:40px;
+}
+
+.custom-toggler .navbar-toggler-icon { 
+     background-image: url('img/icons8-menu.svg');
+  }          
+
+/*SERVICES*/
+
+section.serv{
+	background-color:#1e90ff;
+}
+
+.box{
+	padding:0 4%;
+}
+
+.p_box{
+	line-height:1.8;
+	margin-bottom:40px
+}
+
+/*GALLERY*/
+
+.gallery{
+	background:url(img/gear_bg.jpg);	
+	background-size:cover;
+	background-position:center;			 
+	padding:120px 4%;
+}
+
+.gallery .card{
+	position:relative;
+	overflow:hidden;
+	border:none;
+	display:block;
+	width:100%;
+	background-color:#000;
+	overflow:hidden;
+}
+
+.card img{
+	width:100%;
+	opacity:.8;
+}
+
+.ghost{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1;
+	background-color:#1e90ff;
+	opacity:0;
+	transition:all .6s;
+}
+
+.card:hover .ghost{
+	opacity:.8;
+}
+
+.ghost svg{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/*MAP*/
+
+.map{
+	overflow:hidden;
+	width:100%;
+	height:65vh;
+}
+
+.map iframe{
+	width:100%;
+	height:65vh;
+}
+
+/*ABOUT*/
+
+section.about{
+	overflow:hidden;
+	position:relative;
+	background-color:rgba(47, 53, 66,.2);						 
+
+}
+
+.img_about{
+	position:absolute;
+	top:0;
+	left:0;
+	background:url('img/about.jpg') no-repeat;
+	background-size:cover;
+	height:1000px;
+	width:40%;
+}
+
+/*CONTACT*/
+
+section.contact{
+	padding:120px 0 160px;
+	background:url('img/metallurgy_bg.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+section.contact .mb_contact{
+	margin-bottom:80px;
+}
+
+/*FOOTER*/
+
+footer{
+	overflow-x:hidden !important;
+	padding:35px 0;
+	background-color:#0c0d10;
+}
+
+footer p{
+	font-size:.9em;
+}
+
+.navbar-toggler{
+	border:none;
+}
+
+/*scrollTop butto*/
+
+.scroll_top{
+	position:fixed;
+	right:25px;
+	bottom:25px;
+	width:50px;
+	height:50px;
+	border:2px solid #fff;
+	background-color:#1e90ff;
+	z-index:9999;
+	opacity:.7;
+	cursor:pointer;
+	transition:all .3s;
+	text-align:center;
+	padding:7px 5px 5px; 
+}
+
+.scroll_top:hover{
+	opacity:.9;
+}
+
+.scroll_top svg{
+	color:#fff;
+}
+
+/*preloader*/
+
+.loader{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	background-color:#fff;
+	z-index:999999999999999999999999;
+	visibility:visible;
+	transition:all .5s;
+}
+
+.loader_svg{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.loader_svg svg path,
+.loader_svg svg rect{
+  fill:#1e90ff;
+}
+
+.loader.done{
+	visibility:hidden;
+	opacity:0;
+}
